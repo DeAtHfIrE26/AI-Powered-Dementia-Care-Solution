@@ -1,0 +1,206 @@
+# Detailed Prompt for MemoTag Web Development Project
+
+I'll craft a comprehensive prompt for the Replit agent to build the MemoTag one-page website based on the task specifications.
+
+## Prompt for Replit Agent
+
+```
+Create a high-conversion, fully responsive one-page website for MemoTag, an AI-powered dementia care platform. The website should effectively communicate MemoTag's value proposition while incorporating modern design principles and smooth animations.
+
+## Technology Stack Requirements:
+
+1. FRONTEND:
+   - Next.js (latest version with App Router)
+   - Tailwind CSS for styling
+   - Framer Motion for animations and micro-interactions
+   - Responsive design with mobile-first approach
+   - TypeScript for type safety
+
+2. BACKEND (OPTIONAL):
+   - Implement using either:
+     * Supabase for authentication and database
+     * Node.js with Express for API routes
+   - Set up a PostgreSQL database for storing form submissions
+   - Implement proper form validation and error handling
+
+## Website Sections:
+
+1. HERO SECTION:
+   - Create a visually striking hero with:
+     * Clean, impactful headline ("AI for Dementia Care")
+     * Concise subheading explaining the value proposition
+     * Primary CTA button ("Get Started" or "Request Demo")
+     * Secondary CTA ("Learn More" - smooth scroll to problem section)
+     * Animated visual element (Lottie animation or SVG illustration)
+     * Subtle background pattern or gradient
+   - Implement a sticky navigation bar with links to all sections
+
+2. PROBLEM SECTION:
+   - Design an informative section that:
+     * Presents compelling statistics about dementia prevalence
+     * Highlights diagnostic challenges and care gaps
+     * Uses data visualization (chart/graph) to illustrate the problem
+     * Incorporates fade-in animations on scroll
+   - Implement card-based layout with hover effects
+
+3. SOLUTION SECTION:
+   - Create a "How MemoTag Works" section with:
+     * Step-by-step explanation of the technology
+     * Icons or illustrations for each step
+     * Clear distinction between physical tracking and cognitive monitoring
+     * Animated transitions between steps
+   - Use a zigzag layout for desktop and stacked for mobile
+
+4. TRACTION SECTION:
+   - Develop a metrics-focused section showing:
+     * Key statistics (preorders, user numbers, partnerships)
+     * Animated counters that increment on scroll
+     * Logos of partners or supporters
+     * Testimonial carousel (if including bonus features)
+   - Implement subtle background color change from previous section
+
+5. CTA SECTION:
+   - Design a compelling final call-to-action with:
+     * Contact form (name, email, role, message)
+     * Alternative "Schedule Demo" button
+     * Waitlist signup option (if implementing bonus feature)
+     * Success/error message handling
+   - Add form submission animation
+
+6. FOOTER:
+   - Create a clean footer with:
+     * Copyright information
+     * Privacy policy and terms links
+     * Social media icons
+     * Contact information
+     * Logo
+
+## Design & Animation Requirements:
+
+1. OVERALL DESIGN:
+   - Implement a clean, modern aesthetic with:
+     * Soft color palette (suggest blues/teals with accent colors)
+     * Clear typography hierarchy (2-3 font weights maximum)
+     * Consistent spacing system using Tailwind's spacing scale
+     * Subtle shadows and depth effects
+   - Ensure accessibility compliance (WCAG AA standard)
+
+2. ANIMATIONS:
+   - Implement the following animations:
+     * Smooth page section transitions
+     * Element fade-ins and slide-ins on scroll
+     * Micro-interactions on buttons and interactive elements
+     * Subtle background animations
+   - Ensure animations are performant and don't cause layout shifts
+
+3. RESPONSIVE DESIGN:
+   - Create fully responsive layouts for:
+     * Mobile (320px+)
+     * Tablet (768px+)
+     * Desktop (1024px+)
+     * Large desktop (1440px+)
+   - Implement responsive navigation (hamburger menu on mobile)
+   - Adjust typography sizes across breakpoints
+   - Optimize images for different screen sizes
+
+## Bonus Features:
+
+1. DARK/LIGHT MODE:
+   - Implement theme switching with:
+     * Persistent user preference storage
+     * Smooth transition animation between modes
+     * Automatic detection of system preference
+
+2. WAITLIST FUNCTIONALITY:
+   - Create a waitlist system with:
+     * Email collection form
+     * Supabase integration for storage
+     * Confirmation emails (optional)
+     * Counter showing number of people on waitlist
+
+3. COMPONENT LIBRARY:
+   - Integrate Shadcn/UI for:
+     * Form components
+     * Buttons and interactive elements
+     * Dropdown menus
+     * Modal windows
+
+4. DEPLOYMENT:
+   - Configure the project for Vercel deployment
+   - Set up proper environment variables
+   - Implement meta tags for SEO
+   - Add Open Graph tags for social sharing
+
+## Code Quality Requirements:
+
+1. STRUCTURE:
+   - Organize code with:
+     * Clear component hierarchy
+     * Proper separation of concerns
+     * Reusable components and hooks
+     * Descriptive naming conventions
+
+2. PERFORMANCE:
+   - Optimize for performance with:
+     * Image optimization using Next.js Image component
+     * Code splitting and lazy loading
+     * Minimal dependencies
+     * Server-side rendering where appropriate
+
+3. DOCUMENTATION:
+   - Provide comprehensive documentation:
+     * Detailed README with setup instructions
+     * Component documentation with props definitions
+     * API endpoint documentation (if applicable)
+     * Environment variable requirements
+
+## Additional Notes:
+
+- Focus on creating an emotionally resonant experience that helps visitors understand both the problem (dementia care challenges) and solution (MemoTag platform)
+- Balance technical sophistication with clear, accessible explanations
+- Ensure the design feels premium and trustworthy for healthcare stakeholders
+- Pay special attention to load times and performance metrics
+
+Create this project with clean, well-structured code that would be maintainable by a team. The final website should effectively communicate MemoTag's value proposition while delivering an exceptional user experience.
+```
+
+## Implementation Recommendations
+
+For successful execution of this project, the Replit agent should focus on:
+
+**Modern Next.js Implementation:**
+- Use the App Router architecture for better performance
+- Implement server components where appropriate
+- Utilize Next.js 14+ features for optimized loading states
+
+**Tailwind Best Practices:**
+- Create a consistent design system with custom theme configuration
+- Set up proper typography scales and color palettes
+- Use @apply directives selectively for complex component styles
+- Implement responsive utility patterns for maintainable layouts
+
+**Animation Strategy:**
+- Use Framer Motion's AnimatePresence for page transitions
+- Implement staggered animations for list items
+- Create reusable animation variants for consistent motion design
+- Ensure animations are disabled for users with reduced motion preferences
+
+**Form Implementation:**
+- Use React Hook Form for efficient form state management
+- Implement Zod schema validation for type-safe form handling
+- Create proper loading, error, and success states
+- Implement CSRF protection for form submissions
+
+**Performance Optimization:**
+- Configure proper image formats and optimization
+- Implement font loading strategies to prevent layout shifts
+- Use Lighthouse metrics for performance benchmarking
+- Set up proper caching strategies for static assets
+
+The final product should combine visual polish with technical excellence, creating a seamless experience that effectively communicates MemoTag's mission and value proposition while being fully accessible and performant across all devices.
+
+Citations:
+[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/54585129/34e731b1-610a-4db4-a417-73c25169267f/MemoTag-Webdev-Task.pdf
+
+---
+Answer from Perplexity: pplx.ai/share
