@@ -15,6 +15,9 @@
 
 </div>
 
+![Screenshot 2025-04-14 131155](https://github.com/user-attachments/assets/33fc83ce-51b1-4e4a-aaaa-e65fc8e58721)
+
+
 <p align="center">
   <b>A cutting-edge web application providing innovative solutions for dementia care through artificial intelligence</b>
 </p>
